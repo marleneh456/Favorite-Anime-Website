@@ -76,7 +76,7 @@ nav a {
   margin: 40px auto;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #483D8B;
+  background-color: #1d6579;
   color: white;
   border: none;
   cursor: pointer;
@@ -84,5 +84,5 @@ nav a {
   transition: background-color 0.3s ease;
 }
 .back-to-top:hover {
-  background-color: #6c5dcd;
+  background-color: #38adce;
 }
