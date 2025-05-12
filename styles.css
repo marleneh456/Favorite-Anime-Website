@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+nav {
+  background: #333;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.card {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.card-inner {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  background: white;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: left;
+}
+.card-front img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+.card-back {
+  transform: rotateY(180deg);
+  background: #fff5e6;
+}
+.anime-title {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.back-to-top {
+  margin: 40px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #483D8B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.back-to-top:hover {
+  background-color: #6c5dcd;
+}
