@@ -6,15 +6,28 @@ body {
   background: #f4f4f4;
   text-align: center;
 }
+
 nav {
   background: #333;
   padding: 10px;
 }
+
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
 }
+
+.search-container {
+  margin: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -23,6 +36,7 @@ nav a {
   max-width: 1200px;
   margin: auto;
 }
+
 .card {
   width: 100%;
   max-width: 250px;
@@ -30,6 +44,7 @@ nav a {
   perspective: 1000px;
   cursor: pointer;
 }
+
 .card-inner {
   position: relative;
   width: 250px;
@@ -37,9 +52,11 @@ nav a {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .card.flipped .card-inner {
   transform: rotateY(180deg);
 }
+
 .card-front, .card-back {
   position: absolute;
   top: 0;
@@ -57,15 +74,18 @@ nav a {
   font-size: 12px;
   text-align: left;
 }
+
 .card-front img {
   width: 250px;
   height: 350px;
   object-fit: cover;
 }
+
 .card-back {
   transform: rotateY(180deg);
   background: #fff5e6;
 }
+
 .anime-title {
   margin-top: 12px;
   font-weight: bold;
@@ -83,34 +103,42 @@ nav a {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+
 .back-to-top:hover {
   background-color: #38adce;
 }
 
 @media (max-width: 1018px) and (max-height: 2100px) and (orientation: portrait){
-.grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  padding: 10px;
-}
-.card {
-  width: 80%;
-}
-.card-inner {
-  width: 160px;
-  height: 450px;
 
-}
-.card-front, .card-back {
-  padding: 10px;
-  font-size: 10px;
-}
-.card-front img {
-  width: 160px;
-  height: 450px;
-  object-fit:initial;
-}
-.anime-title {
-  font-size: 10px;
-}
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card-inner {
+    width: 160px;
+    height: 450px;
+
+  }
+
+  .card-front, .card-back {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .card-front img {
+    width: 160px;
+    height: 450px;
+    object-fit:initial;
+  }
+
+  .anime-title {
+    font-size: 10px;
+  }
+
 }

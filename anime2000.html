@@ -16,9 +16,14 @@
   </nav>
   <h2>2000's Anime</h2>
 
+  <!-- Search box -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search anime by title..." />
+  </div>
+
   <div class="grid">
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')" data-title="Shinzo">
       <div class="card-inner">
         <div class="card-front">
           <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Mushrambo_DVD_complete_collection.jpg" alt="Shinzo" />
@@ -261,5 +266,7 @@
   </div>
 
   <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">Back to Top</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
