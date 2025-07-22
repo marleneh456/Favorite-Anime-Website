@@ -15,16 +15,34 @@
     <a href="anime2010.html">2010's</a>
     <a href="anime2020.html">2020's</a>
   </nav>
+
   <h2>2000's Anime</h2>
 
-  <!-- Search box -->
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search anime by title..." />
-  </div>
+  <!-- Search and Year Filter UI -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search anime by title..." />
+
+  <!-- Year Dropdown -->
+  <select id="yearFilter">
+    <option value="">All Years</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+  </select>
+</div>
+
 
   <div class="grid">
 
-    <div class="card" onclick="this.classList.toggle('flipped')" data-title="Shinzo">
+    <!-- Example card with year -->
+    <div class="card" onclick="this.classList.toggle('flipped')" data-year="2000">
       <div class="card-inner">
         <div class="card-front">
           <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Mushrambo_DVD_complete_collection.jpg" alt="Shinzo" />
@@ -39,7 +57,7 @@
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
         <div class="card-front">
-          <img src="https://img.bunnyccdn.co/_r/300x400/100/e2/5a/e25a68ea80a18719cb6481b150e79596/e25a68ea80a18719cb6481b150e79596.jpg" alt="Monster Rancher" />
+          <img src="https://www.dvdplanetstore.pk/wp-content/uploads/2018/01/5EZpDv5lIN6I3kBkHpt9uQzTJ8D.jpg" alt="Monster Rancher" />
         </div>
         <div class="card-back">
           <p>Genki is a boy who loves playing video games. One day he's zapped into the world of Monster Rancher and meets the girl Holly and the monsters Mochi, Suezo, Golem, Tiger and Hare. Together, they are searching for a way to revive the Phoenix, which is the only monster capable of stopping the evil Moo.</p>
