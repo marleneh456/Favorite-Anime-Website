@@ -18,14 +18,29 @@
 
   <h2>2010's Anime</h2>
 
-     <!-- Search box -->
+  <!-- Search box -->
   <div class="search-container">
     <input type="text" id="searchInput" placeholder="Search anime by title..." />
+
+    <!-- Year Dropdown -->
+    <select id="yearFilter">
+      <option value="">All Years</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+    </select>
   </div>
 
   <div class="grid">
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2010'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNTJiOWM5NGMtZTdhYi00MmY3LTlhZGYtMjMwYTk2MTI4NGJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Soul Eater" />
@@ -37,7 +52,7 @@
       <p class="anime-title">Soul Eater</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2011'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BODlhNTQ3ZDgtMDJlMC00YzdmLWE3ZTMtOWNmMTZkN2I2MzI5XkEyXkFqcGc@._V1_.jpg" alt="Fairy Tail" />
@@ -49,7 +64,7 @@
       <p class="anime-title">Fairy Tail</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOTczMjM3MDUtYmZjMC00YzZhLWE4ODQtNjg5YWU4NTJjNzY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="That Time I Got Reincarnated as a Slime" />
@@ -61,7 +76,7 @@
       <p class="anime-title">That Time I Got Reincarnated as a Slime</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://image.tmdb.org/t/p/original/4oy1X4QDgwxmUycIxU7T2VrQkIr.jpg" alt="Demon Slayer" />
@@ -73,7 +88,7 @@
       <p class="anime-title">Demon Slayer</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYzZkYjM1MWMtNTY3Mi00MTMzLTlhNmQtN2ExZjFkYzdjZmFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Dr. Stone" />
@@ -85,7 +100,7 @@
       <p class="anime-title">Dr. Stone</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMGQ4ZGJhZTUtZDQ5Mi00NTI1LWEyYjItMzIxM2VlNmY4MDEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Promised Neverland" />
@@ -97,7 +112,7 @@
       <p class="anime-title">The Promised Neverland</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOTE0MzUzZDktNjZlMS00NjU4LWFkMjYtNTkxMGQxMzZjOGZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Haven't You Heard? I'm Sakamoto" />
@@ -109,7 +124,7 @@
       <p class="anime-title">Haven't You Heard? I'm Sakamoto</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYzU3NDM4ZjgtY2UyMi00YTczLTgyNDEtMjBiMDJlOGUxNjcxXkEyXkFqcGc@._V1_.jpg" alt="Mob Psycho 100" />
@@ -121,7 +136,7 @@
       <p class="anime-title">Mob Psycho 100</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2014'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/sharedimages/2024/04/toradora-2008.jpg" alt="Toradora" />
@@ -133,7 +148,7 @@
       <p class="anime-title">Toradora!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZDAzMmYwZjUtYmVlZS00YTkyLWJjMjItOTY3Y2U2MzZjODQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Kiss Him, Not Me!" />
@@ -145,7 +160,7 @@
       <p class="anime-title">Kiss Him, Not Me!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMTQ0OTY3NjAxMF5BMl5BanBnXkFtZTgwMzE4NDAzNzE@._V1_.jpg" alt="The Seven Deadly Sins" />
@@ -157,7 +172,7 @@
       <p class="anime-title">The Seven Deadly Sins</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNWZkOGJmYmQtNThmYy00MzBmLTk5ZWEtZmNhNzNkM2QyZmRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Castle Town Dandelion" />
@@ -169,7 +184,7 @@
       <p class="anime-title">Castle Town Dandelion</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/71bkPAlZ1TL._AC_UF894,1000_QL80_.jpg" alt="Kiznaiver" />
@@ -181,7 +196,7 @@
       <p class="anime-title">Kiznaiver</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/81Hg5Sm+uGL._AC_UF894,1000_QL80_.jpg" alt="Konosuba: God's Blessing on this Wonderful World!" />
@@ -193,7 +208,7 @@
       <p class="anime-title">Konosuba: God's Blessing on this Wonderful World!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BODgwMGJkZWEtNzFjMS00OTlkLTg0MjMtMTY5NmFjZmUwMjJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Rokudenashi Majutsu Koushi to Akashic Records" />
@@ -205,7 +220,7 @@
       <p class="anime-title">Rokudenashi Majutsu Koushi to Akashic Records</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYTNkYTNhZjUtNzFmZS00YjE4LTgyZDgtMTIyNmQzYjc0ZmFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Myriad Colors Phantom World " />
@@ -214,10 +229,10 @@
           <p>When phantoms cause trouble, it's up to Haruhiko and his Phantom Hunting Club teammates to take care of them! If they can, that is.</p>
         </div>
       </div>
-      <p class="anime-title">Myriad Colors Phantom World </p>
+      <p class="anime-title">Myriad Colors Phantom World</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYTkyYWViY2UtYTgzOS00MWM0LTg2NzUtZmQ5ODQzMDJkNjZkXkEyXkFqcGc@._V1_.jpg" alt="Kakegurui" />
@@ -229,7 +244,7 @@
       <p class="anime-title">Kakegurui</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOTUyYjRlYjctOTg4Mi00OTc1LTk4ZWMtZWU4NTU1YTA1MGVmXkEyXkFqcGc@._V1_.jpg" alt="Isekai Quartet" />
@@ -241,7 +256,7 @@
       <p class="anime-title">Isekai Quartet</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNzNmZDRmM2QtNzA5ZS00MjRhLTg5OWMtZGMwNTk1MjYwNDIwXkEyXkFqcGc@._V1_.jpg" alt="How heavy are the dumbbells you lift?" />
@@ -253,7 +268,7 @@
       <p class="anime-title">How heavy are the dumbbells you lift?</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZTkwMDBmYjItMWM1OS00MjBmLThjM2YtMWVkMGI0YjFhMDFmXkEyXkFqcGc@._V1_.jpg" alt="Free! - Iwatobi Swim Club" />
@@ -265,7 +280,7 @@
       <p class="anime-title">Free! - Iwatobi Swim Club</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8DgRBL8eIMjBmkDYyWqiLnQ3vp8.jpg" alt="Nanbaka" />
@@ -277,7 +292,7 @@
       <p class="anime-title">Nanbaka</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2013'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BY2ZhYmVlMjktODI5NC00ZmIyLTkzYWItYjE0NzFkMDcyYzEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Accel World" />
@@ -289,7 +304,7 @@
       <p class="anime-title">Accel World</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOGQwYmFjYjMtYjVjMS00ZjczLTkwYzEtZjdlMTQxNmExNmM2XkEyXkFqcGc@._V1_.jpg" alt="Ahiru no Sora" />
@@ -301,7 +316,7 @@
       <p class="anime-title">Ahiru no Sora</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMTY5NTkwMTctYjRkNC00MWJiLTgxNmUtZTA3Yzk0OGI3NWU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Kabaneri of the Iron Fortress" />
@@ -313,7 +328,7 @@
       <p class="anime-title">Kabaneri of the Iron Fortress</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2011'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/81H3COSBQ5L.jpg" alt="Black Butler" />
@@ -325,7 +340,7 @@
       <p class="anime-title">Black Butler</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMGI2NDRmZTgtYzU2NS00M2Y1LTkwMWUtNTkxNWFiNjFkYmQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Puella Magi Madoka Magica" />
@@ -337,7 +352,7 @@
       <p class="anime-title">Puella Magi Madoka Magica</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZWQ2YmI5NWMtZTY2Mi00MGUxLWFhMmEtYjVjZjMwOTNkOThjXkEyXkFqcGc@._V1_.jpg" alt="ERASED" />
@@ -349,7 +364,7 @@
       <p class="anime-title">ERASED</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMDJmZGZmNjQtMzE4NS00ZGRmLWFiMTQtM2EzZDhhZGNkY2FmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="March comes in like a lion" />
@@ -361,7 +376,7 @@
       <p class="anime-title">March comes in like a lion</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMzJhYWEyMWUtZDYwNS00NTU4LTgwODItYjBlNzEwMTc5MTc2XkEyXkFqcGc@._V1_.jpg" alt="The Disastrous Life of Saiki K." />
@@ -373,7 +388,7 @@
       <p class="anime-title">The Disastrous Life of Saiki K.</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZjBkYmRiOTAtY2IwOS00ZWU3LTk3YjItNjMzYWZiMDE1MjcyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Assassination Classroom" />
@@ -385,7 +400,7 @@
       <p class="anime-title">Assassination Classroom</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/71ZkEq65MFL._AC_UF894,1000_QL80_.jpg" alt="Princess Jellyfish" />
@@ -397,7 +412,7 @@
       <p class="anime-title">Princess Jellyfish</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://image.tmdb.org/t/p/original/cxzDZUeJqp7YrCr4rIUlxAz8wDk.jpg" alt="Food Wars" />
@@ -409,7 +424,7 @@
       <p class="anime-title">Food Wars</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2014'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYjQ2NWQ0Y2UtYzU5Yi00ZjI2LWE2MDEtMjRhZDNlZWJhOWQ3XkEyXkFqcGc@._V1_.jpg" alt="Kamisama Kiss" />
@@ -421,7 +436,7 @@
       <p class="anime-title">Kamisama Kiss</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNjliYzA2OWQtNTI3Mi00OTc4LWJlZDktNzhmZTc5YjhiZDEyXkEyXkFqcGc@._V1_.jpg" alt="Teasing Master Takagi-san" />
@@ -433,7 +448,7 @@
       <p class="anime-title">Teasing Master Takagi-san</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2011'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BODExOGNjNWEtZWU4Mi00MTVjLWE1ZTEtNTQ2Yjk1YjUxZTViXkEyXkFqcGc@._V1_.jpg" alt="Durarara!!" />
@@ -445,7 +460,7 @@
       <p class="anime-title">Durarara!!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZTM2MmRjOTYtMTgwNS00NDUyLTk0Y2YtNTZkMjZkOTE0OTdlXkEyXkFqcGc@._V1_.jpg" alt="Miss Kobayashi's Dragon Maid" />
@@ -457,7 +472,7 @@
       <p class="anime-title">Miss Kobayashi's Dragon Maid</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOGViMzRkYzctM2IyNi00OWFmLTliMDMtNjk1MmE0M2QyM2I1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="ReLIFE" />
@@ -469,7 +484,7 @@
       <p class="anime-title">ReLIFE</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYmFhMmUzMDMtMWEwZi00NjBlLTljZmUtZTY5OGI4YWEzYTQxXkEyXkFqcGc@._V1_.jpg" alt="Ascendance of a Bookworm" />
@@ -481,7 +496,7 @@
       <p class="anime-title">Ascendance of a Bookworm</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/04/yona-of-the-dawn-2014.jpg" alt="Yona of the Dawn" />
@@ -493,19 +508,19 @@
       <p class="anime-title">Yona of the Dawn</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
-          <img src="https://static.tvtropes.org/pmwiki/pub/images/maidsama.png" alt="Class President is a Maid!" />
+          <img src="https://static.tvtropes.org/pmwiki/pub/images/maidsama.png" alt="Maid Sama!" />
         </div>
         <div class="card-back">
           <p>Ayuzawa Misaki serves as the student council president at Seika High. However, unbeknownst to her classmates, she works part-time as an employee at a Maid Cafe. Usui Takumi, a boy from her school, discovers this secret.</p>
         </div>
       </div>
-      <p class="anime-title">Class President is a Maid!</p>
+      <p class="anime-title">Maid Sama!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2014'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Killlakillpromo.jpg" alt="KILL la KILL" />
@@ -517,7 +532,7 @@
       <p class="anime-title">KILL la KILL</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BODhhZDgxM2EtZjZhYy00ZThkLTk2NDMtNGE0YjJlMWVlMDU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Noragami" />
@@ -529,7 +544,7 @@
       <p class="anime-title">Noragami</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNTY1M2NjMTItOGFhNi00NDU3LWExNzQtZGY2YWJlYzExNmU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Re:ZERO" />
@@ -541,7 +556,7 @@
       <p class="anime-title">Re:ZERO</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BN2U0NDg5ZjgtMDVlOC00YzZiLTk0ZTEtYWY1YWM4NmJmMDk5XkEyXkFqcGc@._V1_.jpg" alt="Ushio and Tora" />
@@ -553,7 +568,7 @@
       <p class="anime-title">Ushio and Tora</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNTJhMjRjYzMtNDYyMC00NTQ0LThiNzctMjY3MjIyYWI4NTNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Monthly Girls' Nozaki-kun" />
@@ -565,7 +580,7 @@
       <p class="anime-title">Monthly Girls' Nozaki-kun</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZWNjMzVjODUtMjE1Ny00YTVmLTgyMDctOGQwM2I5YjRiYThjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Carole & Tuesday" />
@@ -577,7 +592,7 @@
       <p class="anime-title">Carole & Tuesday</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://animeuknews.net/app/uploads/2020/02/Rising-of-the-Shield-Hero-2.jpg" alt="The Rising of the Shield Hero" />
@@ -589,7 +604,7 @@
       <p class="anime-title">The Rising of the Shield Hero</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/71PbOGKldmS._AC_UF894,1000_QL80_.jpg" alt="Haikyuu!!" />
@@ -601,7 +616,7 @@
       <p class="anime-title">Haikyuu!!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMWUwNDFiNjQtYjQ0MC00MTcxLWE0MGQtNTdkYTlhZGU2NDFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Violet Evergarden" />
@@ -613,7 +628,7 @@
       <p class="anime-title">Violet Evergarden</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNmYzMDRkMmYtZjNiZS00ZGVlLWI2NWQtMjc2NTE1OThmZTBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Ping Pong the Animation" />
@@ -625,7 +640,7 @@
       <p class="anime-title">Ping Pong the Animation</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMWVkZmM1ODgtZjdhMC00MjAyLTk3ZjktZWI2N2Y4OGJiNDU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Welcome to Demon School! Iruma-kun" />
@@ -637,7 +652,7 @@
       <p class="anime-title">Welcome to Demon School! Iruma-kun</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2013'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://image.tmdb.org/t/p/original/f4EaPOUT92X22pB1sXBfbqeaYGu.jpg" alt="Good Luck Girl!" />
@@ -649,7 +664,7 @@
       <p class="anime-title">Good Luck Girl!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2014'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BODdjMWIyYjQtNzI4ZC00ZjA1LWJmYzMtYTA1ZjFiNTMxZWI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Devil is a Part-Timer!" />
@@ -661,7 +676,7 @@
       <p class="anime-title">The Devil is a Part-Timer!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/710AoQknpRL._AC_UF894,1000_QL80_.jpg" alt="Classroom of the Elite" />
@@ -673,7 +688,7 @@
       <p class="anime-title">Classroom of the Elite</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYjlkNjI0YzMtMmVmNy00NzdiLWE2N2EtZmJkYWFiOWY5N2YyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="My Roommate is a Cat" />
@@ -685,7 +700,7 @@
       <p class="anime-title">My Roommate is a Cat</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2011'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOGRmOTAwNDQtYzQ5NS00YmZjLThkMDItNzYyMmVlYjIxZmZjXkEyXkFqcGc@._V1_.jpg" alt="Baka & Test" />
@@ -697,7 +712,7 @@
       <p class="anime-title">Baka & Test</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMjhlN2UzN2QtNzQ4ZC00ZmE5LWE2YWYtMGYzODc2NTA4ZDM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="New Game!!" />
@@ -709,7 +724,7 @@
       <p class="anime-title">New Game!!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/71de18RZTTL._AC_UF894,1000_QL80_.jpg" alt="The Quintessential Quintuplets" />
@@ -721,7 +736,7 @@
       <p class="anime-title">The Quintessential Quintuplets</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNWM3OWJhYjktMDZkZC00MjY1LTlmZDUtZDkwYTkxYmQwNmQ2XkEyXkFqcGc@._V1_.jpg" alt="Tokyo Ravens" />
@@ -733,7 +748,7 @@
       <p class="anime-title">Tokyo Ravens</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://geemerch.com/cdn/shop/products/27155_a72ba0a9-d285-4891-8327-f22c3c95fcdb_1200x1200.jpg?v=1744919685" alt="Sarazanmai" />
@@ -745,7 +760,7 @@
       <p class="anime-title">Sarazanmai</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://dailyanimeart.com/wp-content/uploads/2015/01/world-trigger-poster1.jpg" alt="World Trigger" />
@@ -757,7 +772,7 @@
       <p class="anime-title">World Trigger</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://goldendiscs.ie/cdn/shop/files/MM00275201.jpg?v=1730289878" alt="Cautious Hero" />
@@ -769,7 +784,7 @@
       <p class="anime-title">Cautious Hero</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2010'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://i.pinimg.com/474x/ca/9b/d7/ca9bd7d2fed815acdbd7bf5d3d580b59.jpg" alt="Sengoku Basara: Samurai Kings" />
@@ -781,19 +796,7 @@
       <p class="anime-title">Sengoku Basara: Samurai Kings</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="https://m.media-amazon.com/images/M/MV5BYjBmOWY1ZjQtMTkwMi00MWE4LWE3MmMtOTdmNzA5OTQ5MjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Irregular at Magic High School" />
-        </div>
-        <div class="card-back">
-          <p>Siblings Miyuki and Tatsuya Shiba are turning the National Magic University Affiliated First High School campus upside down.</p>
-        </div>
-      </div>
-      <p class="anime-title">The Irregular at Magic High School</p>
-    </div>
-
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYjdjZmMwODQtZTU4YS00YWQ3LTg2NzktNjZiZjZhNGMwNWZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Kino's Journey: The Beautiful World - The Animated Series" />
@@ -805,7 +808,7 @@
       <p class="anime-title">Kino's Journey: The Beautiful World - The Animated Series</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://play-lh.googleusercontent.com/proxy/41XB7vMvCPLf8N_bzcKt6goGJrUpwT-4nrh9WezERmC8ofx7IZDHeHou5I8c8e3jRto2UFCB1aSyc0n46GwYjq0QIsCKVKpkTKhQKWk9bXvoFMjVpe0WmynrvwsslYwhOVvcwKxC8VwqSIhRtpHz-YIdsbBKDEPJ8p2syw" alt="The Master of Killing Time" />
@@ -817,7 +820,7 @@
       <p class="anime-title">The Master of Killing Time</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/71MNWpXvqxL._AC_UF894,1000_QL80_.jpg" alt="Tanaka-kun is Always Listless" />
@@ -829,7 +832,7 @@
       <p class="anime-title">Tanaka-kun is Always Listless</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BN2JmNTIwODktZTkyNy00MWZkLWEwMzAtZjQzNTY0ZTgyODA0XkEyXkFqcGc@._V1_.jpg" alt="Yuri!!! On ICE" />
@@ -841,7 +844,7 @@
       <p class="anime-title">Yuri!!! On ICE</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://image.tmdb.org/t/p/original/dIeb4SEjkgaIrS1Vrvie8KUIDa0.jpg" alt="Little Witch Academia" />
@@ -853,7 +856,7 @@
       <p class="anime-title">Little Witch Academia</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/71XVy9xG8fL._AC_UF894,1000_QL80_.jpg" alt="Tiger & Bunny" />
@@ -865,7 +868,7 @@
       <p class="anime-title">Tiger & Bunny</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZTNkYjAwMGQtNDMzYy00ODEzLTlhZGMtNmUxNzJiYzU0NjM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Cells at Work!" />
@@ -877,7 +880,7 @@
       <p class="anime-title">Cells at Work!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2014'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/I/712N4EvuOOL._AC_UF894,1000_QL80_.jpg" alt="Hakkenden: Eight Dogs of the East" />
@@ -889,7 +892,7 @@
       <p class="anime-title">Hakkenden: Eight Dogs of the East</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BM2Y5NmNkY2ItNTlkMi00YzYzLTgzYjctMjRhMThlMWE3NGE2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="ACCA: 13-Territory Inspection Dept." />
@@ -901,7 +904,7 @@
       <p class="anime-title">ACCA: 13-Territory Inspection Dept.</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMmUyNzNmMDEtNjYzYi00ZDcwLTg4NTQtZTUzYzBiZTYwNzYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Grimgar: Ashes and Illusions" />
@@ -913,7 +916,7 @@
       <p class="anime-title">Grimgar: Ashes and Illusions</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNjYwMzZmMjAtYTdjMC00Zjk0LTkzNzAtMjg5NjllNTEzYzgzXkEyXkFqcGc@._V1_.jpg" alt="Interviews With Monster Girls" />
@@ -925,7 +928,7 @@
       <p class="anime-title">Interviews With Monster Girls</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNWMwMDdkYTUtMDI2Yy00YTgwLWIyMTktMjJhMzNmNzMyNWE2XkEyXkFqcGc@._V1_.jpg" alt="RADIANT" />
@@ -937,7 +940,7 @@
       <p class="anime-title">RADIANT</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMDVhOTNmMzgtNWNhNy00OGEwLWI4ODEtM2IxZTFjYTQ4ZTU4XkEyXkFqcGc@._V1_.jpg" alt="Daily Lives of High School Boys" />
@@ -949,7 +952,7 @@
       <p class="anime-title">Daily Lives of High School Boys</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYjVhYjhkOGQtNzFkNi00NWY1LTkzOWEtMjdkYzQ2YzA0ZWEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Yamada-kun and the Seven Witches" />
@@ -961,7 +964,7 @@
       <p class="anime-title">Yamada-kun and the Seven Witches</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOTg5YzgzNDItMDM2Yy00OGIxLWJmNzItZGU2MDVkMDZhNTk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="D-Frag!" />
@@ -973,7 +976,7 @@
       <p class="anime-title">D-Frag!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNjYyNTI4YjMtOTlhOS00NGYwLWIxOTYtMzY4YzYwY2Y2ZWZhXkEyXkFqcGc@._V1_.jpg" alt="Space Patrol Luluco" />
@@ -985,7 +988,7 @@
       <p class="anime-title">Space Patrol Luluco</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZDFiMTFkOWItMTY3ZC00M2VhLWE5ZGUtNWVlMTc5ZWRiODNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Orange" />
@@ -997,7 +1000,7 @@
       <p class="anime-title">Orange</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2014'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOTk2MzEwZWItYTlhYS00ZjcwLTk5N2YtOWFkYmRlYTJkOWY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Log Horizon" />
@@ -1009,7 +1012,7 @@
       <p class="anime-title">Log Horizon</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNWE2MmQxMmEtMzZjMi00NjcyLThlMjYtMmQ4ODc5ZTQxODE3XkEyXkFqcGc@._V1_.jpg" alt="Blue Exorcist" />
@@ -1021,7 +1024,7 @@
       <p class="anime-title">Blue Exorcist</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNTQ2OWIxZTgtZDU1ZC00MjY5LWIzYTUtMzRmY2E4NzU4M2E1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Kemono Michi: Rise Up" />
@@ -1033,7 +1036,7 @@
       <p class="anime-title">Kemono Michi: Rise Up</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZjU1MTk5ODItNDMxZC00NjhiLWIwOGYtZjc1OGRlZDkzMjI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Wise Man's Grandchild" />
@@ -1045,7 +1048,7 @@
       <p class="anime-title">Wise Man's Grandchild</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYWNlYzk1NGQtNTZkNi00YzJiLWJkMWUtZTYzNjI3YTc5ZDRhXkEyXkFqcGc@._V1_.jpg" alt="DARLING in the FRANXX" />
@@ -1057,7 +1060,7 @@
       <p class="anime-title">DARLING in the FRANXX</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMTZiNGYzZjktODViMi00ZWJjLWExMTMtMGNkYzQ1ODVhNTE2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="A.I.C.O.: Incarnation" />
@@ -1069,7 +1072,7 @@
       <p class="anime-title">A.I.C.O.: Incarnation</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZjE0MjM0MWMtNjkxNy00MzMxLWIwZGQtYzdmYTE3MzM4NDFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Ingress: The Animation" />
@@ -1081,7 +1084,7 @@
       <p class="anime-title">Ingress: The Animation</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://resizing.flixster.com/y_UrMXAdahYEsYBe7ixRmfcqsRI=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17081091_b_v9_aa.jpg" alt="Kengan Ashura" />
@@ -1093,19 +1096,19 @@
       <p class="anime-title">Kengan Ashura</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
-          <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17726300_b_v13_ad.jpg" alt="Scissor Seven" />
+          <img src="https://m.media-amazon.com/images/M/MV5BOWE3YzhjZjYtMjJmYy00MjZiLTg0MGEtMDkyY2Q1YWRkMTdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Luck & Logic" />
         </div>
         <div class="card-back">
-          <p>Seeking to recover his memories, a scissor-wielding hairdresser, bungling quasi-assassin stumbles into a struggle for power among three feuding factions.</p>
+          <p>Logicalists are people who have acquired special power by entering in trance with Goddesses. They work under special police named ALCA under government and protect people against foreigners coming from another world.</p>
         </div>
       </div>
-      <p class="anime-title">Scissor Seven</p>
+      <p class="anime-title">Luck & Logic</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://resizing.flixster.com/AATHLqhxJ9l-SVODh06tnpiWi4g=/fit-in/705x460/v2/https://resizing.flixster.com/hT_moN55jQSbXKYI_TX0zSocSvg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvOGYwYTJlZWQtYWQxMC00ZmFlLWE2N2UtYTczNTlkZDIwODA4LmpwZw==" alt="Aggretsuko" />
@@ -1117,7 +1120,7 @@
       <p class="anime-title">Aggretsuko</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/masamune_kuns_revenge.png" alt="Masamune-kun's Revenge" />
@@ -1129,7 +1132,7 @@
       <p class="anime-title">Masamune-kun's Revenge</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2010'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BN2JmM2Y3NzMtZjhhZS00YmI4LWE0YTEtZWRhOWNlODM4NTIzXkEyXkFqcGc@._V1_.jpg" alt="Strike Witches" />
@@ -1141,7 +1144,7 @@
       <p class="anime-title">Strike Witches</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2011'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNjRjYTc2ZDctNTlhNS00NTdiLTllNjItMWNjMzlmNWQ2MGEwXkEyXkFqcGc@._V1_.jpg" alt="K-ON!" />
@@ -1153,7 +1156,7 @@
       <p class="anime-title">K-ON!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2010'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BY2NmYjk1Y2EtMjNhZi00ZDVjLTg4YzAtZDA5MGY1NGYxMDIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="My Bride is a Mermaid" />
@@ -1165,7 +1168,7 @@
       <p class="anime-title">My Bride is a Mermaid</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2010'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYzgzNjk4ZmYtOTA1MC00MTBmLWFlMjAtYzViOTNjYjU4YzJlXkEyXkFqcGc@._V1_.jpg" alt="Kekkaishi" />
@@ -1177,7 +1180,7 @@
       <p class="anime-title">Kekkaishi</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNGE4ODFiYzgtMGE0Yy00N2Q3LWFlM2QtMmMyODQ5MWUxZjk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Restaurant to Another World" />
@@ -1189,7 +1192,7 @@
       <p class="anime-title">Restaurant to Another World</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMzIxZmM2MzQtYmFkZi00YzA4LWJhNmItZTVkOTNhYjBmNDNmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Semi in the Magic Cube" />
@@ -1201,7 +1204,7 @@
       <p class="anime-title">Semi in the Magic Cube</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://images.justwatch.com/poster/319989638/s332/season-1" alt="Kingdom" />
@@ -1213,7 +1216,7 @@
       <p class="anime-title">Kingdom</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNTY2ZmE3ZWQtMzEzYi00NTJhLTkwZmEtZWFhZTc4OWE5YzA0XkEyXkFqcGc@._V1_.jpg" alt="Ultraman" />
@@ -1225,7 +1228,7 @@
       <p class="anime-title">Ultraman</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BMzE4NTM3OWYtNDBhMi00MzlkLTg1MzQtODFkOTk1YTZhZjdlXkEyXkFqcGc@._V1_.jpg" alt="Seinto Seiya: The Lost Canvas" />
@@ -1237,7 +1240,7 @@
       <p class="anime-title">Saint Seiya: The Lost Canvas</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2015'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOGI4ZTAzMjQtNjc0ZS00MGZiLTk2YzYtODc1NDA1N2UwNzQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Yuki Yuna is a Hero" />
@@ -1249,7 +1252,7 @@
       <p class="anime-title">Yuki Yuna is a Hero</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYTMxNDIzYzEtNjA2My00ZGM3LWI3NGEtNmVhODg0YmU3NDBmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="In Another World With My Smartphone" />
@@ -1261,7 +1264,7 @@
       <p class="anime-title">In Another World With My Smartphone</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2018'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://ih1.redbubble.net/image.206187653.0509/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" alt="Twin Star Exorcists" />
@@ -1273,7 +1276,7 @@
       <p class="anime-title">Twin Star Exorcists</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZGEyNTBiNTktZjc4Yi00OTRhLTk3YzItMGFiZTBkOWYxZGMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Dagashi Kashi" />
@@ -1285,7 +1288,7 @@
       <p class="anime-title">Dagashi Kashi</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglFr_aQsc_EBY5q3HZwmYIOIiiGSdYppJipyQTUpHV_F2AqFZ_BIuTdSIEUkC9KcMWcHL9Xi1Ap0Af3vSFVXwhXQDSalAoC5qAEZVQf9omB6FHpYASSrlVdSayX7eDqKjSQngDdq82WjI/s1600/Mitsuboshi+Colors_Main.jpg" alt="Mitsuboshi Colors" />
@@ -1297,7 +1300,7 @@
       <p class="anime-title">Mitsuboshi Colors</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2019'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNDFjNjE1MWQtYWJlMS00NDM4LWFiZWQtNzc3YmM5MGUwOGJjXkEyXkFqcGc@._V1_.jpg" alt="Demon Lord, Retry!" />
@@ -1309,19 +1312,19 @@
       <p class="anime-title">Demon Lord, Retry!</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHyzL6aRpYMxWSOPfO3L7hu9adcsu8Gh8cRUoUWYkqbd7mnxHq-Iua0yRljp8pnmVPt-aJpkrQLXTES9JSiLsrRcbxWy6oGkjJ2CHzPHxP1BaEDxOCk8qda890o-NpdCzABBAmZ0okLPuT/s700/c0.jpg" alt="[C] CONTROL - The Money and Soul of Possibilitys" />
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHyzL6aRpYMxWSOPfO3L7hu9adcsu8Gh8cRUoUWYkqbd7mnxHq-Iua0yRljp8pnmVPt-aJpkrQLXTES9JSiLsrRcbxWy6oGkjJ2CHzPHxP1BaEDxOCk8qda890o-NpdCzABBAmZ0okLPuT/s700/c0.jpg" alt="C - Control - The Money of Soul and Possibility" />
         </div>
         <div class="card-back">
           <p>The Japanese government was rescued from the brink of financial collapse by the Sovereign Wealth Fund.</p>
         </div>
       </div>
-      <p class="anime-title">[C] CONTROL - The Money and Soul of Possibility</p>
+      <p class="anime-title">C - Control - The Money of Soul and Possibility</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2011'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNmVjYzc2MWQtZWRiZi00MjMzLWI1ODctZDU1ODNjZjBlNzNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Hero Tales" />
@@ -1333,7 +1336,7 @@
       <p class="anime-title">Hero Tales</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2010'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BYmE5Nzk1ZGQtMGZmZC00NjI0LWE5MTEtNWJhMmI2ZmZiNDdhXkEyXkFqcGc@._V1_.jpg" alt="Sands of Destruction" />
@@ -1345,7 +1348,7 @@
       <p class="anime-title">Sands of Destruction</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2012'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BNzI2ZWE1MDItNTY4NS00NjdiLTlmZTYtM2Y3OGZjMzNiMWExXkEyXkFqcGc@._V1_.jpg" alt="Infinite Stratos" />
@@ -1357,7 +1360,7 @@
       <p class="anime-title">Infinite Stratos</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2016'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BOTY1M2ZlYzctN2ZmOS00ZGM3LTk5ZmUtMWEzMjI4NDAyNDBmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Asterisk War" />
@@ -1369,7 +1372,7 @@
       <p class="anime-title">The Asterisk War</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2013'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://i5.walmartimages.com/seo/RWBY-Group-Poster_e9ab50a8-1881-4a50-8a29-c53ff956e24e_1.f22c4c24228d2e2eebd9ad9144266a4e.jpeg" alt="RWBY" />
@@ -1381,7 +1384,7 @@
       <p class="anime-title">RWBY</p>
     </div>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2017'>
       <div class="card-inner">
         <div class="card-front">
           <img src="https://myhotposters.com/cdn/shop/products/mL0220_1024x1024.jpg?v=1748538142" alt="The Royal Tutor" />

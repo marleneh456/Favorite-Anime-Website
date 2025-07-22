@@ -21,6 +21,22 @@
      <!-- Search box -->
   <div class="search-container">
     <input type="text" id="searchInput" placeholder="Search anime by title..." />
+
+    <!-- Year Dropdown -->
+  <select id="yearFilter">
+    <option value="">All Years</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    <option value="2027">2027</option>
+    <option value="2028">2028</option>
+    <option value="2029">2029</option>
+  </select>
+
   </div>
   
   <div class="grid">
@@ -3256,18 +3272,6 @@
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
         <div class="card-front">
-          <img src="https://m.media-amazon.com/images/M/MV5BNWNkMzk0M2QtMTUyZi00OTE2LTkxZmMtYTYxNmYyN2IyMzg5XkEyXkFqcGc@._V1_.jpg" alt="Bubble" />
-        </div>
-        <div class="card-back">
-          <p>After bubbles that broke the laws of gravity rained down upon the world. Cut off from the outside world, Tokyo has become a playground for a group of young people who have lost their families.</p>
-        </div>
-      </div>
-      <p class="anime-title">Bubble</p>
-    </div>
-
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">
           <img src="https://m.media-amazon.com/images/M/MV5BZTlmOGM4N2EtNDBhYy00ZGY2LTg5YzYtNzBhMzRhMGZlYzhkXkEyXkFqcGc@._V1_.jpg" alt="Spriggan" />
         </div>
         <div class="card-back">
@@ -3624,6 +3628,30 @@
         </div>
       </div>
       <p class="anime-title">Onmyo Kaiten Re:Birth Verse</p>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2022'>
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BYjBmOWY1ZjQtMTkwMi00MWE4LWE3MmMtOTdmNzA5OTQ5MjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Irregular at Magic High School" />
+        </div>
+        <div class="card-back">
+          <p>Siblings Miyuki and Tatsuya Shiba are turning the National Magic University Affiliated First High School campus upside down.</p>
+        </div>
+      </div>
+      <p class="anime-title">The Irregular at Magic High School</p>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('flipped')"data-year='2020'>
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17726300_b_v13_ad.jpg" alt="Scissor Seven" />
+        </div>
+        <div class="card-back">
+          <p>Seeking to recover his memories, a scissor-wielding hairdresser, bungling quasi-assassin stumbles into a struggle for power among three feuding factions.</p>
+        </div>
+      </div>
+      <p class="anime-title">Scissor Seven</p>
     </div>
 
   </div>
